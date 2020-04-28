@@ -7,13 +7,14 @@ This is designed to specifically fix v8 firwware MagicHome Flux LED WiFi RGB con
 You will need to put these files into your HomeAssistant /config/custom_components/flux_led/ folder.
 After that, if you are running in a docker container you will need to make sure you enter the container and run 
 
-*cd /config/custom_components/flux_led*
+**cd /config/custom_components/flux_led**
 
-*chown root:root*
+**chown root:root**
 
 
 This should give the files the proper permissions needed for HomeAssistant Core to access the files.
 Go ahead and restart HomeAssistant and then go into Developer Tools, then Log, and you should see
+
 *WARNING (MainThread) [homeassistant.loader] You are using a custom integration for flux_led which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.*
 
 Once you see that, you will know it's loading the new custom component you added. Go ahead and test from here, lights should now turn on/off, note that there is more of a delay than normal with this fix, it takes a second or two in order for it ot update it's state when you request a change, but working slowly is better than not working at all!
