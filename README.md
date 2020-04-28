@@ -6,8 +6,10 @@ This is designed to specifically fix v8 firwware MagicHome Flux LED WiFi RGB con
 # Usage
 You will need to put these files into your HomeAssistant /config/custom_components/flux_led/ folder.
 After that, if you are running in a docker container you will need to make sure you enter the container and run 
+
 *cd /config/custom_components/flux_led*
 *chown root:root*
+
 
 This should give the files the proper permissions needed for HomeAssistant Core to access the files.
 Go ahead and restart HomeAssistant and then go into Developer Tools, then Log, and you should see
