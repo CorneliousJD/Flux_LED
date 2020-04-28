@@ -8,6 +8,7 @@ You will need to put these files into your HomeAssistant /config/custom_componen
 After that, if you are running in a docker container you will need to make sure you enter the container and run 
 
 *cd /config/custom_components/flux_led*
+
 *chown root:root*
 
 
