@@ -21,4 +21,16 @@ Go ahead and restart HomeAssistant and then go into Developer Tools, then Log, a
 
 Once you see that, you will know it's loading the new custom component you added. Go ahead and test from here, lights should now turn on/off, note that there is more of a delay than normal with this fix, it takes a second or two in order for it ot update it's state when you request a change, but working slowly is better than not working at all!
 
+*As a workaround for the slow-ish polling, you can set `scan_interval` in the configuration.yml to a pretty low value. This makes it much snappier.*
+
+Example:
+```
+  - platform: flux_led
+    scan_interval: 0.5
+    devices:
+            10.0.2.4:
+                    name: LED TV
+                    mode: rgb
+```
+
 Thanks go to john32 on HomeAssistant Forums, and @skylord123 on GitHub for pointing me in the right direction here.
