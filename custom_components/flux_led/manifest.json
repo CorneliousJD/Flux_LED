@@ -4,7 +4,7 @@
   "version": "1.0",
   "documentation": "https://www.home-assistant.io/components/flux_led",
   "requirements": [
-    "flux_led==0.22"
+    "flux_led==0.23.1"
   ],
   "dependencies": [],
   "codeowners": []
