@@ -7,7 +7,7 @@ This is designed to specifically fix v8 firwware MagicHome Flux LED WiFi RGB con
 
 ### HACS installation
 This can be installed via HACS! To do this, follow these instructions: 
-  1. Copy the URL to this respository: https://github.com/CorneliousJD/Flux_LED/
+  1. Copy the URL to this respository: https://github.com/RandomArray/Flux_LED/
   2. In HACS, select integrations
   3. Click the 3 vertical dots (⋮) at the top right of the HACS integration page
   4. Select 'Custom repositories'
